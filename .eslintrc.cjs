@@ -8,6 +8,7 @@ module.exports = {
 		'airbnb',
 		'airbnb-typescript',
 		'prettier',
+		'plugin:storybook/recommended',
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -24,7 +25,13 @@ module.exports = {
 		// Disable React import.
 		'react/react-in-jsx-scope': 0,
 		// Sort imports.
-		'sort-imports': ['warn', { ignoreCase: true, ignoreDeclarationSort: true }],
+		'sort-imports': [
+			'warn',
+			{
+				ignoreCase: true,
+				ignoreDeclarationSort: true,
+			},
+		],
 		'import/order': [
 			'warn',
 			{
