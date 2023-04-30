@@ -3,6 +3,7 @@
 	"include": [
 		// Repeated from base config's "include" setting.
 		"src",
+		"cypress",
 		"*.ts",
 		"*.tsx",
 

@@ -77,5 +77,26 @@ module.exports = {
 				unnamedComponents: 'arrow-function',
 			},
 		],
+		// Disable extraneous dependencies for tests and specific files.
+		'import/no-extraneous-dependencies': [
+			'error',
+			{
+				devDependencies: [
+					// Repos with a single test file.
+					'test.{ts,tsx}',
+					// Repos with multiple top-level test files.
+					'test-*.{ts,tsx}',
+					// Tests where the extension or filename suffix denotes that it is a test.
+					'**/*{.,_}{test,spec}.{ts,tsx}',
+					// Jest config file.
+					'**/jest.config.ts',
+					// jest setup file.
+					'**/jest.setup.ts',
+					// Cypress config file.
+					'**/cypress.config.ts',
+				],
+				optionalDependencies: false,
+			},
+		],
 	},
 }
