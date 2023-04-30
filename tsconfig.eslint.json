@@ -8,6 +8,7 @@
 
 		// These are the eslint-only inclusions.
 		".eslintrc.cjs",
-		".prettierrc.cjs"
+		".prettierrc.cjs",
+		"tailwind.config.js"
 	]
 }
