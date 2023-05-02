@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 
 const ICONS = {
-	bill: 'src/assets/images/icon-dollar.svg',
-	people: 'src/assets/images/icon-person.svg',
+	bill: '/assets/images/icon-dollar.svg',
+	people: '/assets/images/icon-person.svg',
 }
 
 type InputProps = {
