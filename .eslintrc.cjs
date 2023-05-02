@@ -87,16 +87,26 @@ module.exports = {
 					// Repos with multiple top-level test files.
 					'test-*.{ts,tsx}',
 					// Tests where the extension or filename suffix denotes that it is a test.
-					'**/*{.,_}{test,spec}.{ts,tsx}',
+					'**/*{.,_}{test,spec,stories}.{ts,tsx}',
 					// Jest config file.
 					'**/jest.config.ts',
-					// jest setup file.
+					// Jest setup file.
 					'**/jest.setup.ts',
 					// Cypress config file.
 					'**/cypress.config.ts',
+					// Vite config file.
+					'vite.config.ts',
 				],
 				optionalDependencies: false,
 			},
 		],
 	},
+	overrides: [
+		{
+			files: ['**/*.stories.@(js|jsx|ts|tsx)'],
+			rules: {
+				'react/jsx-props-no-spreading': ['off'],
+			},
+		},
+	],
 }
