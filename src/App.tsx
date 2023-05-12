@@ -1,9 +1,10 @@
 import { useState } from 'react'
 
-import Button from './components/Button'
-import Input from './components/Input'
-import TipCalculatorSummary from './components/TipCalculatorSummary'
-import TipSelector, { TipPercentages } from './components/TipSelector'
+import Button from 'components/Button'
+import Input from 'components/Input'
+import TipCalculatorSummary from 'components/TipCalculatorSummary'
+import TipSelector, { TipPercentages } from 'components/TipSelector'
+
 import utils from './utils'
 
 function App() {
