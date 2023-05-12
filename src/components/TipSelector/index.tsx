@@ -35,23 +35,22 @@ const TipSelector = ({
 				placeholder='Custom'
 				value={value}
 				onChange={onChange}
-				className='h-12 w-[116px] rounded bg-neutral-100 px-4 font-bold text-neutral-500 caret-primary outline-none placeholder:text-center placeholder:text-neutral-300 focus:border-2 focus:border-primary focus:text-right'
+				className='h-12 min-w-[116px] rounded bg-neutral-100 px-4 font-bold text-neutral-500 caret-primary outline-none placeholder:text-center placeholder:text-neutral-300 focus:border-2 focus:border-primary focus:text-right'
 			/>
 		)
 	}
 
 	return (
-		// eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/interactive-supports-focus
-		<div
-			role='button'
+		<button
+			type='button'
 			id={`tip-amount-${percentage}`}
-			className={`flex h-12 w-[116px] flex-col items-center justify-center rounded bg-neutral-500 hover:cursor-pointer hover:bg-neutral-200 hover:text-neutral-500 ${
+			className={`flex h-12 min-w-[116px] flex-col items-center justify-center rounded bg-neutral-500 hover:cursor-pointer hover:bg-neutral-200 hover:text-neutral-500 ${
 				selected ? 'bg-primary text-neutral-500' : 'text-white'
 			}`}
 			onClick={onClick}
 		>
 			<p className='font-bold'>{percentage}%</p>
-		</div>
+		</button>
 	)
 }
 
