@@ -10,13 +10,13 @@ import utils from './utils'
 function App() {
 	const TIP_PERCENTAGES: TipPercentages[] = [5, 10, 15, 25, 50]
 
-	const [bill, setBill] = useState<string | undefined>()
-	const [numberOfPeople, setNumberOfPeople] = useState<string | undefined>()
+	const [bill, setBill] = useState<string | undefined>('')
+	const [numberOfPeople, setNumberOfPeople] = useState<string | undefined>('')
 
-	const [tipPercentage, setTipPercentage] = useState<number | undefined>()
+	const [tipPercentage, setTipPercentage] = useState<number | undefined>(0)
 	const [customTipPercentage, setCustomTipPercentage] = useState<
 		string | undefined
-	>()
+	>('')
 
 	const isResetButtonEnabled = !!(
 		bill ||
