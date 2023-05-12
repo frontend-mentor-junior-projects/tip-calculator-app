@@ -66,6 +66,19 @@ export const FilledInputZero: Story = {
 	},
 }
 
+export const FilledInputLessThanZero: Story = {
+	name: 'Input Is Less Than Zero',
+	play: ({ canvasElement }) => {
+		const canvas = within(canvasElement)
+
+		const input = canvas.getByRole('spinbutton')
+		userEvent.type(input, '-10')
+
+		const errorMessage = canvas.getByText("Can't be less than zero")
+		expect(errorMessage).toBeInTheDocument()
+	},
+}
+
 export const FilleInputMaxNumber: Story = {
 	name: 'Maximum Number',
 	play: ({ canvasElement }) => {

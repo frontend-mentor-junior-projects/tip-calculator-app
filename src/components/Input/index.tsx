@@ -29,17 +29,23 @@ const Input = ({ type, label, value, onChange }: InputProps) => {
 				</label>
 
 				{value === '0' && (
-					<p className='font-bold text-[#C68B7B]'>Can't be zero</p>
+					<p className='text-right font-bold text-[#C68B7B]'>Can't be zero</p>
+				)}
+
+				{value && value < '0' && (
+					<p className='text-right font-bold text-[#C68B7B]'>
+						Can't be less than zero
+					</p>
 				)}
 
 				{!isValidNumber(value) && value && (
-					<p id='error-message' className='font-bold text-[#C68B7B]'>
+					<p id='error-message' className='text-right font-bold text-[#C68B7B]'>
 						Invalid number
 					</p>
 				)}
 
 				{isValidNumber(value) && Number(value) > 10000 && (
-					<p id='error-message' className='font-bold text-[#C68B7B]'>
+					<p id='error-message' className='text-right font-bold text-[#C68B7B]'>
 						Maximum number
 					</p>
 				)}

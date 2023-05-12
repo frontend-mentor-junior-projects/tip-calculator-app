@@ -63,6 +63,18 @@ describe('Tip Calculator', () => {
 		errorMessage.should('exist')
 	})
 
+	it('should not calculate if number of people is less than 0', () => {
+		const TipCalculator = new TipCalculatorApp()
+
+		TipCalculator.fillForm({ ...FORM_WITH_BASIC_TIP, numberOfPeople: '-10' })
+
+		TipCalculator.elements.tipAmountPerPerson.should('have.text', '$0.00')
+		TipCalculator.elements.totalPerPerson.should('have.text', '$0.00')
+
+		const errorMessage = cy.get('p').contains("Can't be less than zero")
+		errorMessage.should('exist')
+	})
+
 	it('should not calculate if bill is larger than 10000', () => {
 		const TipCalculator = new TipCalculatorApp()
 

@@ -19,6 +19,10 @@ const shouldCalculate = (
 		return 0
 	}
 
+	if (Number(numberOfPeople) < 0 || Number(bill) < 0) {
+		return 0
+	}
+
 	return null
 }
 
