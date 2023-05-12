@@ -39,7 +39,7 @@ function App() {
 				TTER
 			</h1>
 
-			<section className='mb-12 flex min-w-[375px] flex-col rounded-3xl rounded-b-none bg-white p-8 lg:grid lg:h-[480px] lg:w-[928px] lg:grid-cols-2 lg:gap-x-12 lg:rounded-b-3xl lg:pl-10'>
+			<section className='flex min-w-[375px] flex-col rounded-3xl rounded-b-none bg-white p-8 sm:pl-12 lg:mb-12 lg:grid lg:h-[480px] lg:w-[928px] lg:grid-cols-2 lg:gap-x-12 lg:rounded-b-3xl'>
 				<div className='flex flex-col space-y-8 py-4 lg:justify-between'>
 					<Input
 						type='bill'
@@ -52,7 +52,7 @@ function App() {
 
 					<div>
 						<p className='mb-4 text-neutral-500'>Select Tip %</p>
-						<div className='grid grid-cols-2 gap-y-4 lg:grid-cols-3 lg:grid-rows-2'>
+						<div className='grid grid-cols-2 gap-x-4 gap-y-4 lg:grid-cols-3 lg:grid-rows-2'>
 							{TIP_PERCENTAGES.map((percentage) => {
 								const selected = customTipPercentage
 									? false
