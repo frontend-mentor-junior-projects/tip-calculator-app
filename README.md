@@ -35,7 +35,7 @@
 ## Preview
 
 <div align='center'>
-  <img src='./design/preview.png' alt='Tip Calculator App preview image'>
+  <img src='./design/screenshot.png' alt='Tip Calculator App preview image'>
 </div>
 
 <h2>The Challenge</h2>
