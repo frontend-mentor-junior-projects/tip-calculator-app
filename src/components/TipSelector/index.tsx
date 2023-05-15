@@ -44,9 +44,8 @@ const TipSelector = ({
 		<button
 			type='button'
 			id={`tip-amount-${percentage}`}
-			className={`flex h-12 min-w-[116px] flex-col items-center justify-center rounded bg-neutral-500 hover:cursor-pointer hover:bg-neutral-200 hover:text-neutral-500 ${
-				selected ? 'bg-primary text-neutral-500' : 'text-white'
-			}`}
+			className={`flex h-12 min-w-[116px] flex-col items-center justify-center rounded bg-neutral-500 transition duration-300 ease-out hover:cursor-pointer hover:bg-neutral-200 hover:text-neutral-500
+      ${selected ? 'bg-primary text-neutral-500' : 'text-white'}`}
 			onClick={onClick}
 		>
 			<p className='font-bold'>{percentage}%</p>

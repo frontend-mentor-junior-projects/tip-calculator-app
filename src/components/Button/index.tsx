@@ -12,7 +12,7 @@ const Button = ({ children, disabled = false, onClick }: ButtonProps) => {
       ${
 				disabled
 					? 'bg-[#0D686D] text-neutral-400'
-					: 'bg-primary  hover:bg-neutral-200'
+					: 'bg-primary transition duration-300 ease-out hover:bg-neutral-200'
 			}`}
 			disabled={disabled}
 			onClick={onClick}
