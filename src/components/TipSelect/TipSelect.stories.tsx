@@ -20,12 +20,15 @@ const meta: Meta<typeof TipSelect> = {
 			control: false,
 		},
 	},
+	parameters: {
+		layout: 'fullscreen',
+	},
 	decorators: [
 		(Story) => {
 			return (
-				<div className='w-1/3'>
+				<section className='flex min-w-[375px] flex-col rounded-3xl rounded-b-none bg-white p-8 sm:pl-12 lg:mb-12 lg:grid lg:h-[480px] lg:w-[928px] lg:grid-cols-2 lg:gap-x-12 lg:rounded-b-3xl'>
 					<Story />
-				</div>
+				</section>
 			)
 		},
 	],
