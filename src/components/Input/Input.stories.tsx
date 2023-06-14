@@ -80,14 +80,14 @@ export const FilledInputLessThanZero: Story = {
 }
 
 export const FilleInputMaxNumber: Story = {
-	name: 'Maximum Number',
+	name: 'Number too large',
 	play: ({ canvasElement }) => {
 		const canvas = within(canvasElement)
 
 		const input = canvas.getByRole('spinbutton')
 		userEvent.type(input, '10001')
 
-		const errorMessage = canvas.getByText('Maximum number')
+		const errorMessage = canvas.getByText('Number too large')
 		expect(errorMessage).toBeInTheDocument()
 	},
 }
