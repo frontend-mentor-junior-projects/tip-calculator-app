@@ -7,7 +7,7 @@
 </p>
 
 <p>
-  <a href="#" target="_blank">💻 View Demo</a>
+  <a href="https://ltd-tip-calcular-app.netlify.app/" target="_blank">💻 View Demo</a>
   &nbsp;·&nbsp;
   <a href="https://github.com/frontend-mentor-junior-projects/tip-calculator-app/issues" target="_blank">🐞 Report Bug</a>
 </p>
@@ -43,10 +43,11 @@ Users should be able to:
 <br />
 <br />
 <ul>
-  <li>-> View the optimal layout for the site depending on their device's screen size</li>
-  <li>-> See hover states for all interactive elements on the page</li>
+  <li> View the optimal layout for the site depending on their device's screen size</li>
+  <li> See hover states for all interactive elements on the page</li>
+  <li> Calculate the correct tip and total cost of the bill per person</li>
 </ul>
 
 ## Built With
 
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) &nbsp; ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) &nbsp; ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) &nbsp; ![Storybook](https://img.shields.io/badge/-Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white) &nbsp; ![cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) &nbsp; ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) &nbsp; ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) &nbsp; ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) &nbsp; ![Storybook](https://img.shields.io/badge/-Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white) &nbsp; ![cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
