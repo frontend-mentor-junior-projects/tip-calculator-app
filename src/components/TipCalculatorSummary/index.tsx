@@ -7,13 +7,13 @@ const TipCalculatorSummary = ({ label, value }: TipCalculatorSummaryProps) => {
 	return (
 		<div className='mb-4 flex flex-row items-center justify-between font-bold'>
 			<div>
-				<p className='text-white'>{label}</p>
-				<p className='text-neutral-200'>/ person</p>
+				<span className='block text-white'>{label}</span>
+				<span className='block text-neutral-200'>/ person</span>
 			</div>
 
-			<p className='text-[24px] text-primary lg:text-[48px]'>
+			<span className='text-[24px] text-primary lg:text-[48px]'>
 				${value.toFixed(2)}
-			</p>
+			</span>
 		</div>
 	)
 }
