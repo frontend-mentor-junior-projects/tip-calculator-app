@@ -2,9 +2,15 @@ export type ButtonProps = {
 	children: string
 	disabled?: boolean
 	onClick: () => void
+	ariaLabel?: string
 }
 
-const Button = ({ children, disabled = false, onClick }: ButtonProps) => {
+const Button = ({
+	children,
+	disabled = false,
+	onClick,
+	ariaLabel = '',
+}: ButtonProps) => {
 	return (
 		<button
 			type='button'
@@ -16,6 +22,7 @@ const Button = ({ children, disabled = false, onClick }: ButtonProps) => {
 			}`}
 			disabled={disabled}
 			onClick={onClick}
+			aria-label={ariaLabel}
 		>
 			{children.toUpperCase()}
 		</button>
