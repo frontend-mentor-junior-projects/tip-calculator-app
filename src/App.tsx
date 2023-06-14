@@ -38,7 +38,7 @@ function App() {
 			</h1>
 
 			<section className='flex min-w-[375px] flex-col rounded-3xl rounded-b-none bg-white p-8 sm:pl-12 lg:mb-12 lg:grid lg:h-[480px] lg:w-[928px] lg:grid-cols-2 lg:gap-x-12 lg:rounded-b-3xl'>
-				<div className='flex flex-col space-y-8 py-4 lg:justify-between'>
+				<form className='flex flex-col space-y-8 py-4 lg:justify-between'>
 					<Input
 						type='bill'
 						label='Bill'
@@ -68,7 +68,7 @@ function App() {
 							setNumberOfPeople(event.target.value)
 						}}
 					/>
-				</div>
+				</form>
 
 				<div className='mt-8 flex flex-col justify-between rounded-2xl bg-neutral-500 p-6 pt-12 lg:mt-0 lg:p-10 lg:pb-10'>
 					<div className='mb-8 lg:mb-0'>
