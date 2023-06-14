@@ -1,12 +1,9 @@
 import { useState } from 'react'
 
-import { Button, Input, TipCalculatorSummary, TipSelector } from 'components'
-import { TipPercentages } from 'components/TipSelector'
+import { Button, Input, TipCalculatorSummary, TipSelect } from 'components'
 import utils from 'utils'
 
 function App() {
-	const TIP_PERCENTAGES: TipPercentages[] = [5, 10, 15, 25, 50]
-
 	const [bill, setBill] = useState<string | undefined>('')
 	const [numberOfPeople, setNumberOfPeople] = useState<string | undefined>('')
 
@@ -51,36 +48,17 @@ function App() {
 						}}
 					/>
 
-					<div>
-						<p className='mb-4 text-neutral-500'>Select Tip %</p>
-						<div className='grid grid-cols-2 gap-x-4 gap-y-4 lg:grid-cols-3 lg:grid-rows-2'>
-							{TIP_PERCENTAGES.map((percentage) => {
-								const selected = customTipPercentage
-									? false
-									: tipPercentage === percentage
-
-								return (
-									<TipSelector
-										key={percentage}
-										percentage={percentage}
-										selected={selected}
-										onClick={() => {
-											setTipPercentage(percentage)
-											setCustomTipPercentage('')
-										}}
-									/>
-								)
-							})}
-							<TipSelector
-								custom
-								value={customTipPercentage}
-								onChange={(event) => {
-									setTipPercentage(undefined)
-									setCustomTipPercentage(event.target.value)
-								}}
-							/>
-						</div>
-					</div>
+					<TipSelect
+						options={[5, 10, 15, 25, 50]}
+						onChangeTip={(tip: number | undefined) => {
+							setTipPercentage(tip)
+						}}
+						onChangeCustomTip={(tip: string) => {
+							setCustomTipPercentage(tip)
+						}}
+						tipPercentage={tipPercentage}
+						customTipPercentage={customTipPercentage}
+					/>
 
 					<Input
 						type='people'
