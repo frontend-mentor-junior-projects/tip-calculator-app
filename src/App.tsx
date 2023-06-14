@@ -31,7 +31,10 @@ function App() {
 
 	return (
 		<main className='flex min-h-screen flex-col items-center justify-center bg-neutral-200'>
-			<h1 className='mb-10 mt-12 text-[24px] text-neutral-500 lg:mb-[88px]'>
+			<h1
+				className='mb-10 mt-12 text-[24px] text-neutral-500 lg:mb-[88px]'
+				aria-label='Splitter'
+			>
 				SPLI
 				<br />
 				TTER
